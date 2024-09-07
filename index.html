@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor de Tonalidad RGB</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h1 class="text-center mb-4 display-6">Visor de Tonalidad RGB</h1>
+        
+        <!-- Color Picker -->
+        <div class="row mb-4 justify-content-center">
+          <div class="col-auto">
+            <label for="color-picker" class="form-label">Selecciona un Color</label>
+            <input type="color" id="color-picker" class="form-control form-control-color" style="width: 3rem; height: 3rem; padding: 0;">
+          </div>
+        </div>
+
+        <!-- RGB Sliders and Inputs -->
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <label for="red" class="form-label">Rojo</label>
+            <input type="range" class="form-range" min="0" max="255" id="red">
+            <input type="number" class="form-control mt-2" min="0" max="255" id="red-value" placeholder="0 - 255">
+          </div>
+          <div class="col-md-4">
+            <label for="green" class="form-label">Verde</label>
+            <input type="range" class="form-range" min="0" max="255" id="green">
+            <input type="number" class="form-control mt-2" min="0" max="255" id="green-value" placeholder="0 - 255">
+          </div>
+          <div class="col-md-4">
+            <label for="blue" class="form-label">Azul</label>
+            <input type="range" class="form-range" min="0" max="255" id="blue">
+            <input type="number" class="form-control mt-2" min="0" max="255" id="blue-value" placeholder="0 - 255">
+          </div>
+        </div>
+
+        <!-- Color Display and Hex Code -->
+        <div class="row justify-content-center mb-4">
+          <div id="color-display" class="color-box rounded shadow-sm"></div>
+        </div>
+        <p id="hex-code" class="text-center fs-5 fw-bold"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

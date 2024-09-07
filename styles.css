@@ -1,0 +1,31 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #e0e0e0;
+  margin-top: 20px;
+}
+
+input[type="range"] {
+  accent-color: #007bff;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #495057;
+}
+
+#color-picker {
+  cursor: pointer;
+  margin-top: 8px;
+}
